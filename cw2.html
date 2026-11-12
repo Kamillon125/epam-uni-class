@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPA Movement</title>
+    <link rel="icon" type="image/png" href="EPAM_logo.png">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="topnav">
+        <a href="cw1.html">Documented wrongdoings</a>
+        <a href="index.html">Home</a>
+        <a class="active" href="cw2.html">Contact</a>
+    </nav>
+    <div class="grid">
+        <header>
+          <h1>Escalator Peace Advocates Movement (EPAM)</h1>
+        </header>
+      
+        <aside class="sidebar-left">
+            <figure>
+                <img src="sad_face.png" alt="sad face emoji">
+                <figcaption>You before you report a walker</figcaption>
+            </figure>
+        </aside>
+      
+        <article>
+            <h2>Report a Walker</h2>
+            <div class="container">
+                <form id="report-form">
+              
+                  <label for="email">E-Mail</label>
+                  <input type="email" id="email" name="email" placeholder="Your E-Mail" required> <!-- walidacja e-maila-->
+                  
+                  <label for="what_crime_select">What would you like to report?</label>
+                  <select id="what_crime_select" name="what_crime_select">
+                    <option value="walker">I would like to report a walker.</option>
+                    <option value="walkers">I would like to report many walkers.</option>
+                    <option value="apology">I would like to report myself for walking.</option>
+                  </select>
+              
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Please describe the unfortunate event in detail." style="height:200px" required minlength="15"></textarea> <!-- walidacja długości i konieczność message-->
+              
+                  <input type="submit" value="Submit">
+
+                  <p id="form-feedback" style="text-align: center"></p>
+              
+                </form>
+
+                <div class="history-section">
+                  <h3>Recent Citizen Reports</h3>
+                  <div id="reports-list"></div>
+              </div>
+              </div>
+
+        </article>
+      
+        <aside class="sidebar-right">
+            <figure>
+                <img src="happy_dog.png" alt="happy dog propeller hat silly">
+                <figcaption>You after you report a walker</figcaption>
+            </figure>
+        </aside>
+        
+        <footer>
+            <small>
+              Kamil :3
+            </small>
+          </footer>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
